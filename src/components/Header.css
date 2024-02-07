@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; /* Adjust height as needed */
+    background-color: #f0f0f0;
+    padding: 0 20px; /* Adjust padding as needed */
+  }
+  
+  .header-text {
+     /* Pushes the text to the most left */
+  }
+  
+  .search-bar {
+    border-radius: 30px; /* Increased roundness of corners */
+    padding: 10px;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;
+    
+  }
+  
+  .search-bar:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adjust the shadow as needed */
+  }
+  
+  .button {
+    background-color: #ccc; /* Adjust button background color */
+    color: #fff; /* Adjust button text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 200px; /* Adjust the value for the roundness of corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #999; /* Adjust button hover background color */
+  }

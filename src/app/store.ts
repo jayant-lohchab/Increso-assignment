@@ -1,7 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import FilterSlice from '../features/FilterSlice';
+import JobsSlice from '../features/JobsSlice';
 
 export const store = configureStore({
   reducer: {
+    filter: FilterSlice,
+    jobsPostings: JobsSlice
   },
 });
 
