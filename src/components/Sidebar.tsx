@@ -10,7 +10,7 @@ export default function Sidebar() {
 
   useEffect(() => {
     reduxDispatch(fetchFiltersThunk());
-  }, []);
+  }, [reduxDispatch]);
 
   return (
     <div>
