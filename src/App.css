@@ -1,3 +1,49 @@
-main {
-    display: flex;
+body {
+  background-color: #171C28;
+  color: #fff;
+}
+
+.App {
+  padding: 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-container {
+  flex: 1;
+  margin: 5vh 5vh 3vh 12vh;
+  border-color: azure;
+}
+
+.sidebar {
+  background-color: #171C28;
+  width: 25vw;
+  padding: 20px;
+  /* border-radius: 10px; */
+  margin: 1vh 0 0 5vh;
+}
+
+.sidebar-item {
+  margin-bottom: 10px;
+}
+
+.sidebar-item:hover {
+  background-color: #200f3e;
+  cursor: pointer;
+}
+
+.header {
+  padding: 20px;
+  border-bottom: 1px solid #444;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header:hover {
+  background-color: #444;
 }

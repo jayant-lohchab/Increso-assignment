@@ -12,7 +12,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <div className="text-2xl">
+    <div className="text-2xl header-component">
       <div className="header">
         <div className="header-text">Jobs</div>
         <input
@@ -22,8 +22,8 @@ const Header: React.FC = () => {
           onChange={handleChange}
         />
         <div>
-          <button className="button">P</button>
-          <button className="button">B</button>
+          <button className="button bttn1">P</button>
+          <button className="button bttn2">B</button>
         </div>
       </div>
     </div>

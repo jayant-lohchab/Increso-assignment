@@ -6,7 +6,7 @@ import fetchFiltersThunk from "../features/FilterThunk";
 
 export default function Sidebar() {
   const reduxDispatch = useAppDispatch();
-  const filters = useAppSelector(store => store.filter.filters);
+  const filters = useAppSelector((store) => store.filter.filters);
 
   useEffect(() => {
     reduxDispatch(fetchFiltersThunk());
@@ -14,10 +14,9 @@ export default function Sidebar() {
 
   return (
     <div>
-      <div className="sidebar-header">
-        <div>Filter By</div>
-        <div>3 Filters Applied</div>
-        <div>Clear All</div>
+      <div className="sidebar-header flex justify-between items-center">
+        <div className="flex-grow">Filter By</div>
+        <div className="text-sm">3 Filters Applied   Clear All</div>
       </div>
 
       {filters.map((filter: IFilter, index) => {

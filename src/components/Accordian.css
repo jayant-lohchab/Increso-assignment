@@ -1,0 +1,40 @@
+.filter {
+    border: 1px 0  solid #ccc;
+    /* border-radius: 5px; */
+    /* margin-bottom: 10px; */
+  }
+  
+  .filter-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .filter-options {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .filter-option {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .filter-option input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .dark-theme {
+    background-color: #171C28;
+    color: #fff;
+  }
+  
+  .dark-theme .filter-header {
+    background-color: #10141f;
+  }
+  
+  .dark-theme .filter-option:hover {
+    background-color: #555;
+  }
+  

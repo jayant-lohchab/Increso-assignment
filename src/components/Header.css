@@ -1,22 +1,26 @@
+.header-component{
+
+  background-color: 303B54;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px; /* Adjust height as needed */
-    background-color: #f0f0f0;
-    padding: 0 20px; /* Adjust padding as needed */
+    background-color:  #303B54;
   }
   
-  .header-text {
-     /* Pushes the text to the most left */
-  }
   
   .search-bar {
     border-radius: 30px; /* Increased roundness of corners */
     padding: 10px;
     box-shadow: none;
     transition: box-shadow 0.3s ease;
-    
+    height: 5.5vh;
+    width: 40vw;
+    color: rgb(211, 207, 217);
+    background-color: rgb(9, 32, 52);
   }
   
   .search-bar:hover {
@@ -24,13 +28,20 @@
   }
   
   .button {
-    background-color: #ccc; /* Adjust button background color */
-    color: #fff; /* Adjust button text color */
     padding: 10px 20px; /* Adjust padding as needed */
     border: none;
     border-radius: 200px; /* Adjust the value for the roundness of corners */
     cursor: pointer;
     transition: background-color 0.3s ease;
+    height: 5.5vh;
+    width: 5.5vh;
+    
+  }
+  .bttn1{
+    background-color: red;
+  }
+  .bttn2{
+    background-color: rgb(77, 190, 215);
   }
   
   .button:hover {
