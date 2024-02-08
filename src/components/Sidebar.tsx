@@ -16,7 +16,7 @@ export default function Sidebar() {
     <div>
       <div className="sidebar-header flex justify-between items-center">
         <div className="flex-grow">Filter By</div>
-        <div className="text-sm">3 Filters Applied   Clear All</div>
+        <div className="text-sm">3 Filters Applied Clear All</div>
       </div>
 
       {filters.map((filter: IFilter, index) => {

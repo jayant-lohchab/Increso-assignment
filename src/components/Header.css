@@ -1,49 +1,46 @@
-.header-component{
-
+.header-component {
   background-color: 303B54;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px; /* Adjust height as needed */
-    background-color:  #303B54;
-  }
-  
-  
-  .search-bar {
-    border-radius: 30px; /* Increased roundness of corners */
-    padding: 10px;
-    box-shadow: none;
-    transition: box-shadow 0.3s ease;
-    height: 5.5vh;
-    width: 40vw;
-    color: rgb(211, 207, 217);
-    background-color: rgb(9, 32, 52);
-  }
-  
-  .search-bar:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adjust the shadow as needed */
-  }
-  
-  .button {
-    padding: 10px 20px; /* Adjust padding as needed */
-    border: none;
-    border-radius: 200px; /* Adjust the value for the roundness of corners */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    height: 5.5vh;
-    width: 5.5vh;
-    
-  }
-  .bttn1{
-    background-color: red;
-  }
-  .bttn2{
-    background-color: rgb(77, 190, 215);
-  }
-  
-  .button:hover {
-    background-color: #999; /* Adjust button hover background color */
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #303b54;
+}
+
+.search-bar {
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+  height: 5.5vh;
+  width: 40vw;
+  color: rgb(211, 207, 217);
+  background-color: rgb(9, 32, 52);
+}
+
+.search-bar:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 200px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* height: 5.5vh;
+  width: 5.5vh; */
+}
+.bttn1 {
+  background-color: red;
+}
+.bttn2 {
+  background-color: rgb(77, 190, 215);
+}
+
+.button:hover {
+  background-color: #999;
+}

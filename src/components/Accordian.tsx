@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useAppDispatch } from "../app/hooks";
 import { IFilter, setSelectedFilterOptions } from "../features/FilterSlice";
-import "./Accordian.css"
+import "./Accordian.css";
 interface IAccordianProp {
   filter: IFilter;
 }
@@ -14,14 +14,14 @@ const Accordian: React.FC<IAccordianProp> = ({ filter }) => {
     const isChecked = selectedOptions.includes(filterOption);
 
     const updatedOptions = isChecked
-      ? selectedOptions.filter(option => option !== filterOption)
+      ? selectedOptions.filter((option) => option !== filterOption)
       : [...selectedOptions, filterOption];
 
     setSelectedOptions(updatedOptions);
     reduxDispatch(
       setSelectedFilterOptions({
         filterKey: filter.filterKey,
-        selectedOptions: updatedOptions
+        selectedOptions: updatedOptions,
       })
     );
   };
@@ -32,7 +32,11 @@ const Accordian: React.FC<IAccordianProp> = ({ filter }) => {
       <ul className="filter-options dark-theme">
         {filter.filterOptions.map((filterOption, index) => {
           return (
-            <li className="filter-option dark-theme" key={index} onClick={() => handleClick(filterOption)}>
+            <li
+              className="filter-option dark-theme"
+              key={index}
+              onClick={() => handleClick(filterOption)}
+            >
               <input
                 type="checkbox"
                 onChange={() => handleClick(filterOption)}

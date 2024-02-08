@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import List from "./components/List";
 import Sidebar from "./components/Sidebar";
-import "./App.css"
+import "./App.css";
 
 function App() {
   return (

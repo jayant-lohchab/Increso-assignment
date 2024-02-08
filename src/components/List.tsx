@@ -6,8 +6,8 @@ import { IJobPosting } from "../features/JobsSlice";
 
 export default function List() {
   const reduxDispatch = useAppDispatch();
-  const jobPostings = useAppSelector(store => store.jobsPostings.jobPostings);
-  const filterStore = useAppSelector(store => store.filter);
+  const jobPostings = useAppSelector((store) => store.jobsPostings.jobPostings);
+  const filterStore = useAppSelector((store) => store.filter);
 
   const [filteredJobPostings, setFilteredJobPostings] = useState<IJobPosting[]>(
     []
@@ -18,7 +18,7 @@ export default function List() {
   }, [reduxDispatch]);
 
   useEffect(() => {
-    const updatedJobPostings: IJobPosting[] = jobPostings.filter(job => {
+    const updatedJobPostings: IJobPosting[] = jobPostings.filter((job) => {
       let isShow = true;
       for (const [key, value] of Object.entries(filterStore.selectedFilters)) {
         if (value.length !== 0 && isShow) {
