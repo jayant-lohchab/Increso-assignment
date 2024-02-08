@@ -3,7 +3,6 @@ import { useAppDispatch, useAppSelector } from "../app/hooks";
 import fetchJobsThunk from "../features/JobsThunk";
 import Card from "./Card";
 import { IJobPosting } from "../features/JobsSlice";
-import { store } from "../app/store";
 
 export default function List() {
   const reduxDispatch = useAppDispatch();
@@ -16,7 +15,7 @@ export default function List() {
 
   useEffect(() => {
     reduxDispatch(fetchJobsThunk());
-  }, []);
+  }, [reduxDispatch]);
 
   useEffect(() => {
     const updatedJobPostings: IJobPosting[] = jobPostings.filter(job => {
